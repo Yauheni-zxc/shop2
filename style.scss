@@ -14,10 +14,14 @@ a {
     padding-left: calc(50% - $Dekstopwidth/2);
     padding-right: calc(50% - $Dekstopwidth/2);
 }
-
+/*префиксы*/
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 25px;
     padding-bottom: 24px;
 }
@@ -146,10 +150,14 @@ summary::-webkit-details-marker {
     font-weight: 900;
     color: $PinkColor;
 }
-
+/*префиксы*/
 .header-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -180,12 +188,19 @@ input {
     color: #a4a4a4;
     background-color: white;
 }
-
+/*префиксы*/
 .header-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 230px;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 
 .btn-right {
