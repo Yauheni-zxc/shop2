@@ -63,6 +63,7 @@ summary::-webkit-details-marker {
   position: relative;
 }
 .browse-box_list {
+  z-index: 1;
   left: -90px;
   position: absolute;
   padding-bottom: 22px;
@@ -143,7 +144,7 @@ input {
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #a4a4a4;
-  padding: 8px 196px 8px 16px;
+  padding: 8px 159px 8px 16px;
 }
 
 .searc {
@@ -243,6 +244,7 @@ input {
   color: #222222;
 }
 .Account-box_button-top {
+  display: block;
   font-family: Lato;
   font-size: 14px;
   line-height: 1.2;
@@ -259,6 +261,7 @@ input {
   color: #222222;
 }
 .Account-box_button-bot {
+  display: block;
   font-family: Lato;
   font-size: 14px;
   line-height: 1.2;
@@ -293,13 +296,104 @@ input {
   gap: 35px;
 }
 
+.menu_list {
+  position: relative;
+}
+
 .menu_link {
+  padding-bottom: 20px;
+  padding-top: 20px;
   font-family: Lato;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
+}
+
+.mega-box {
+  padding: 21px 25px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  display: none;
+}
+
+.menu-item {
+  padding-left: 46px;
+}
+
+.menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.menu_list:hover .mega-box {
+  display: flex;
+}
+
+.mega-box::before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  position: absolute;
+  left: 30px;
+  top: -9px;
+  transform: rotate(45deg);
+  border-top: solid 1px #e8e8e8;
+  border-left: solid 1px #e8e8e8;
+}
+
+.menu-item1 {
+  padding-top: 37px;
+}
+
+.mega-box_logo {
+  margin-top: 22px;
+  display: block;
+  width: 225px;
+  height: 118px;
+  background: url(images/rectangle_23_1802.png);
+}
+
+.last:hover .mega-box {
+  right: 0;
+  left: auto;
+}
+
+.last:hover .mega-box::before {
+  right: 35px;
+  left: auto;
+}
+
+.menu-title {
+  width: 235px;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  margin-bottom: 16px;
+}
+
+.mega-link {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #646464;
+  display: block;
+}
+.mega-link:hover {
+  color: #f16d7f;
 }
 
 .title {
@@ -938,6 +1032,9 @@ input {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #898989;
+}
+.footer_link:hover {
+  color: #f16d7f;
 }
 .footer_info {
   width: 43%;
